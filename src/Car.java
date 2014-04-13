@@ -54,7 +54,11 @@ public class Car {
 	 * Decelerates the car as specified by parameter
 	 */
 	public void decelerate(int amount) {
-		this.speed-= amount;
+		if(amount >= speed) {
+		  this.speed = 0;
+		} else {
+		  this.speed-= amount;
+		}
 	}
 	
 	/**
