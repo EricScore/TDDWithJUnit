@@ -3,14 +3,13 @@ public class Car {
 	private String color;
 	private int speed;
 	private int maxSpeed;
-
 	
 	/**
 	 * Creates a new car instance
 	 * @param color
 	 * @param maxSpeed
 	 */
-	public Car(String color, int maxSpeed){
+	public Car(String color, int maxSpeed) {
 		this.color = color;
 		this.maxSpeed = maxSpeed;
 		this.speed = 0;
@@ -19,7 +18,7 @@ public class Car {
 	/**
 	 * Return the current speed of the car.
 	 */
-	public int getSpeed(){
+	public int getSpeed() {
 		return(this.speed);
 	};
 	
@@ -28,11 +27,11 @@ public class Car {
 	 * set in the object constructor.
 	 * @param amount	The amount the car will accelerate
 	 */
-	public void accelerate(int amount){
+	public void accelerate(int amount) {
 		int limit = this.maxSpeed - this.speed;
-		if(amount >= limit){
+		if(amount >= limit) {
 		  this.speed = limit;
-		}else{
+		} else {
 		  this.speed+= amount;
 		}
 	}
@@ -41,7 +40,7 @@ public class Car {
 	 * Displays the object as a string in the format
 	 * "Color: red, Speed: 100"
 	 */
-	public String toString(){
+	public String toString() {
 		// not implemented!
 		return("");
 	}
