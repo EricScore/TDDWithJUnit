@@ -16,6 +16,13 @@ public class Car {
 	}
 	
 	/**
+	 * Setter for speed attribute
+	 */
+	public void setSpeed(int speed) {
+		this.speed = speed;
+	}
+	
+	/**
 	 * Return the current speed of the car.
 	 */
 	public int getSpeed() {
@@ -41,6 +48,13 @@ public class Car {
 		} else {
 		  this.speed+= amount;
 		}
+	}
+	
+	/**
+	 * Decelerates the car as specified by parameter
+	 */
+	public void decelerate(int amount) {
+		this.speed-= amount;
 	}
 	
 	/**
